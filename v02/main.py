@@ -7,12 +7,16 @@ sentences = get_sentence_by_file("realistic_english_sentences_5000.txt") #about 
 words = make_word_list(sentences=sentences)
 
 one_matrix =  np.eye(hidden_layer)
-
+weigh1 = np.random.rand(hidden_layer , len(words))
+weigh2 = np.random.rand(len(words) , hidden_layer) 
 def learning():
     min = 6 
     max = 0
-    for i in itr: 
+    for i in range(itr): 
         for snt in sentences : #example of snt = ['they', 'attend', 'meetings', 'every', 'monday'] 
-            
-
+            print(snt)
+            l1 = []
+            for i1 in range(len(snt) - 1):
+                print(snt[i1])
+                
 learning()

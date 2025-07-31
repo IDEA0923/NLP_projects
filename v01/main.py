@@ -45,7 +45,7 @@ print(f"w2i =  {len(word2ind)}")
 # for in1 in range(2):
 #     for i in 
 wrd
-hidden_layer  , alfa , itr , top = 100 , 0.0001 , 20 , 10
+hidden_layer  , alfa , itr , top = 100 , 0.0001 , 6 , 10
 layer0 = np.zeros(len(wrd))
 weigh0_1 = np.random.rand(len(wrd) ,hidden_layer )
 weigh1_2 = np.random.rand(hidden_layer  , len(wrd))
