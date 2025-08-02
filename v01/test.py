@@ -10,7 +10,7 @@ end_of_p = " "
 weigh01 = np.load("weigh0_1.npy")
 weigh12 = np.load("weigh1_2.npy")
 ind = 1
-words =  [wrd[3] , wrd [14] , wrd[15]]
+words =  [wrd[92] , wrd [65] , wrd[35]]
 while True :
     
     ind = int(input())
