@@ -35,3 +35,24 @@ def deffinition_symb(text: str  , normal_symb : str)->str:
             if i not in asn :
                 asn = asn + i
     return asn 
+
+def high_reg_to_low(text : str)->str:
+    ans = ""
+    for i in text:
+        if i in en_up:
+            ans = ans + en_down[en_up.index(i)]
+        else:
+            ans = ans + i 
+    return ans
+
+def low_reg_to_high(text: str)->str:
+    ans = ""
+    for i in text:
+        if i in en_down:
+            ans = ans + en_up[en_down.index(i)]
+        else:
+            ans = ans + i 
+    return ans
+
+
+

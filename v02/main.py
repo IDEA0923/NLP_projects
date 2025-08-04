@@ -24,10 +24,6 @@ def learning():
             
             l2 = l1.dot(weigh2)
             print(softmax(l2))
-            
-
-                
-                
 
 learning()
 
